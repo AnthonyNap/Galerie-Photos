@@ -14,3 +14,4 @@ Structure de la Page
     <section> ou <article> : Pour regrouper les images thématiquement.
     <img> : Pour intégrer les images.
     <figcaption> et <figure> : Pour ajouter des descriptions aux images.
+	
