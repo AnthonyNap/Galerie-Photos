@@ -7,7 +7,7 @@ Fonctionnalités
     Thème Sombre/Clair : Permet aux utilisateurs de basculer entre un thème sombre et clair pour une meilleure expérience visuelle.
     Affichage de l'Heure : Montre l'heure actuelle dans la barre de navigation, mise à jour en temps réel.
     Design Réactif : S'adapte à différents appareils et tailles d'écran pour assurer une expérience utilisateur cohérente.
-    Accessibilité : Utilisation des attributs aria-* pour rendre la galerie plus accessible aux technologies d'assistance.
+    Accessibilité : Utilisation des attributs arial pour rendre la galerie plus accessible aux technologies d'assistance.
 
 Technologies Utilisées
 
