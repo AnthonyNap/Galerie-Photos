@@ -1,15 +1,87 @@
 /* Styles de base */
 body {
-    background-color: black;
+    background-color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #c2bfbf;
 }
 
+/* Thème Sombre */
+body.dark-mode {
+    background-color: #333;
+    color:white;
+}
+
+/* Style supplémentaires pour le bouton */
+#theme-switch {
+    background-color: #f8f8f8;
+    border: 2px solid #333;
+    color:#333;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+}
+
+#theme-switch:hover {
+    background-color: #333;
+    color:white;
+}
+
+/* Style pour le thème sombre */
+body.dark-mode #theme-switch {
+    background-color: #555;
+    color: #ddd;
+    border-color: #ddd;
+}
+
+body.dark-mode #theme-switch:hover {
+    background-color: #555;
+    color: #555;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+#clock {
+    font-style: italic;
+    color: rgb(126, 69, 168);
+    font-size: 1.5em;
+    margin-left: auto;
+    padding-right: 0;
+}
+
 /* Header */
 .site-header {
-    background-color: #f8f8f8;
+    background-color: #524f4f;
     padding: 20px 0;
     text-align: center;
 }
@@ -18,36 +90,83 @@ body {
     margin: 0;
 }
 
+/* Section About */
+#about {
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+
+}
+
 /* Galerie */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 20px;
 }
 
 .photo {
-    margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .photo img {
-    max-width: 100%;
-    height: auto;
-    border: 3px solid #ddd;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+max-width: 100%;
+height: auto;
+border: 3px solid #ddd;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .photo figcaption {
-    text-align: center;
-    margin-top: 5px;
+text-align: center;
+margin-top: 5px;
 }
 
 /* Footer */
 .site-footer {
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+background-color: #524f4f;
+text-align: center;
+padding: 10px 0;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+.gallery {
+flex-direction: column;
+}
+nav ul li {
+float: none;
+}
+}
+
+/* Animation */
+.photo img:hover {
+transform: scale(1.05);
+transition: transform 0.5s ease;
+}
+
+/* Thème sombre/clair */
+body.dark-mode {
+background-color: #333;
+color: white;
+}
+
+/* Polices personnalisées */
+@import url('https://fonts.googleapis.com/css2?family=Votre+Police:weight@400;700&display=swap');
+
+body {
+font-family: 'Votre Police', sans-serif;
+}
+
+/* Variables CSS */
+:root {
+--primary-color: #ff4500;
+--secondary-color: #333;
+}
+
+body {
+color: var(--primary-color);
 }

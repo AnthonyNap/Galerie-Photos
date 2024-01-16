@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>GAlerie Photo</title>
+    <title>Ma Galerie de Photos</title>
 </head>
-
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="#gallery">Gallerie</a></li>
+            <li><a href="about">À propos...</a></li>
+            <li><button id="theme-switch">Thème Sombre/Clair</button></li>
+            <li id="clock"></li>
+        </ul>
+    </nav>
 
     <header class="site-header">
         <h1>Ma Galerie de Photos</h1>
     </header>
+
+    <section id="about">
+       <h2>À propos de la Galerie</h2>
+       <p>Cette Galerie a été créer pour illustré des images</p>
+    </section>
 
     <section class="gallery">
         <figure class="photo">
@@ -30,5 +42,7 @@
         <p> © 2024 Nap's Gallery </p>
     </footer>
     
+    <script src="script.js"></script>
+
 </body>
 </html>

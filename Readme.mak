@@ -1,38 +1,30 @@
-README pour le projet "Galerie Photo"
+Galerie de Photos de Nap
 Description
 
-Ce projet est une simple galerie photo construite avec HTML et CSS. Elle présente une interface utilisateur élégante et intuitive permettant de visualiser des images avec des légendes.
+Ce projet est une galerie de photos simple et élégante conçue pour présenter des images captivantes. Elle intègre des fonctionnalités modernes de développement web, y compris l'accessibilité, le design réactif et la personnalisation de thème.
 Fonctionnalités
 
-    Affichage d'images: Le site web affiche des images avec des légendes sous chaque image.
-    Design responsive: Grâce à l'utilisation de flexbox en CSS, la galerie est responsive et s'adapte à différents tailles d'écran.
-    Style personnalisé: Le site utilise des styles personnalisés pour améliorer l'expérience visuelle, y compris les couleurs de fond, les bordures, et les ombres.
+    Thème Sombre/Clair : Permet aux utilisateurs de basculer entre un thème sombre et clair pour une meilleure expérience visuelle.
+    Affichage de l'Heure : Montre l'heure actuelle dans la barre de navigation, mise à jour en temps réel.
+    Design Réactif : S'adapte à différents appareils et tailles d'écran pour assurer une expérience utilisateur cohérente.
+    Accessibilité : Utilisation des attributs aria-* pour rendre la galerie plus accessible aux technologies d'assistance.
 
-Structure du projet
+Technologies Utilisées
 
-    index.html: Le fichier principal qui contient la structure HTML de la galerie photo.
-    style.css: Le fichier CSS qui contient tous les styles pour styliser la galerie.
+    HTML
+    CSS
+        Flexbox pour la mise en page.
+        Média queries pour le design réactif.
+    JavaScript
+        Manipulation du DOM pour le thème dynamique et l'affichage de l'heure.
 
-Comment utiliser
+Comment Utiliser
 
-    Ouvrez index.html dans un navigateur pour afficher la galerie.
-    Ajoutez d'autres images en insérant de nouvelles balises <figure> dans la section <section class="gallery"> dans index.html.
+    Basculer entre les Thèmes :
+        Cliquez sur le bouton "Thème Sombre/Clair" dans la barre de navigation pour changer le thème de la page.
 
-Technologies utilisées
-
-    HTML: Pour la structure de la page.
-    CSS: Pour le style de la page.
-
-Personnalisation
-
-Vous pouvez personnaliser ce projet en modifiant le HTML pour ajouter plus d'images et en ajustant le CSS pour modifier l'apparence selon vos goûts.
-Contribution
-
-Les contributions à ce projet sont les bienvenues. Pour contribuer, veuillez suivre ces étapes :
-
-    Forker le projet.
-    Créer une nouvelle branche pour vos modifications.
-    Soumettre une pull request pour examen.
+    Navigation :
+        Utilisez les liens de la barre de navigation pour naviguer entre les différentes sections de la page.
 
 Licence
 
