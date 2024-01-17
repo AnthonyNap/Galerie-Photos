@@ -1,10 +1,13 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:weight@400;700&display=swap');
+
 /* Styles de base */
 body {
     background-color: white;
-    font-family: Arial, sans-serif;
+    color: var(--primary-color); 
+    font-family: 'Roboto', Arial, sans-serif; 
     margin: 0;
     padding: 0;
-    color: #c2bfbf;
 }
 
 /* Thème Sombre */
@@ -13,11 +16,11 @@ body.dark-mode {
     color:white;
 }
 
-/* Style supplémentaires pour le bouton */
+/* Style pour les boutons et interactions */
 #theme-switch {
     background-color: #f8f8f8;
-    border: 2px solid #333;
-    color:#333;
+    border: 2px solid var(--secondary-color); 
+    color: var(--secondary-color);
     padding: 10px 20px;
     font-size: 1em;
     border-radius: 5px;
@@ -27,8 +30,8 @@ body.dark-mode {
 }
 
 #theme-switch:hover {
-    background-color: #333;
-    color:white;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 /* Style pour le thème sombre */
@@ -152,21 +155,4 @@ transition: transform 0.5s ease;
 body.dark-mode {
 background-color: #333;
 color: white;
-}
-
-/* Polices personnalisées */
-@import url('https://fonts.googleapis.com/css2?family=Votre+Police:weight@400;700&display=swap');
-
-body {
-font-family: 'Votre Police', sans-serif;
-}
-
-/* Variables CSS */
-:root {
---primary-color: #ff4500;
---secondary-color: #333;
-}
-
-body {
-color: var(--primary-color);
 }
