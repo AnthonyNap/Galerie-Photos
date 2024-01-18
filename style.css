@@ -2,6 +2,23 @@ body {
     transition: background-color 2.5s ease, color 2.5s ease;
 }
 
+.text-container {
+    text-align: center; /* Centre le texte si nécessaire */
+    background-color: rgba(255, 255, 255, 0.8); /* Donne un fond semi-transparent si nécessaire */
+    padding: 10px 0; /* Ajuste le padding pour l'espacement */
+    margin-bottom: -20px; /* Négative margin pour soulever le texte au-dessus de l'image */
+}
+
+.image-container {
+    position: relative; /* Position relative pour permettre le chevauchement de la marge négative */
+    z-index: 1; /* Assure-toi que l'image reste en arrière-plan */
+}
+
+/* Tu peux ajouter une marge en bas du conteneur du texte si tu veux pousser l'image vers le bas */
+.text-container {
+    margin-bottom: 20px; /* Ajuste cette valeur selon l'espacement désiré entre le texte et l'image */
+}
+
 /* Thème sombre général */
 .dark-theme {
     background-color: #262626; /* Fond plus sombre pour augmenter le contraste */
@@ -177,3 +194,16 @@ button:hover {
     background-color: #555; /* Couleur de fond au survol en thème sombre */
 }
 
+.site-footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 1em;
+}
