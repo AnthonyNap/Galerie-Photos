@@ -1,5 +1,5 @@
 body {
-    transition: background-color 1s ease, color 1s ease;
+    transition: background-color 2.5s ease, color 2.5s ease;
 }
 
 /* Thème sombre général */
@@ -38,7 +38,7 @@ body.dark-theme nav {
 }
 
 body.dark-theme #carrousel img {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4);
 }
 
 /* Gallerie */
@@ -68,7 +68,7 @@ p {
     display: none;
     margin-bottom: 20px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -127,7 +127,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0;
+    margin: 0 130px;
 }
 
 nav.dark-theme {
@@ -142,14 +142,16 @@ nav a:hover {
 /* Stylisation de l'heure */
 #clock {
     font-family: 'Arial', sans-serif; /* Utilise la police de ton choix */
-    font-size: 1.2em; /* Ajuste la taille de la police */
+    font-size: 1.5em; /* Ajuste la taille de la police */
+    font-style: italic; /* Style de la police italic */
     color: #333; /* Couleur du texte pour le thème clair */
     padding: 10px 15px; /* Ajuste le padding pour l'espacement */
     text-align: right; /* Alignement du texte à droite */
+    margin-left: auto; /* Cela pousse l'heure tout à droite */ 
 }
 
-.dark-theme #horloge {
-    color: #fff
+.dark-theme #clock {
+    color: rgb(255, 255, 255);
 }
 
 /* button */
