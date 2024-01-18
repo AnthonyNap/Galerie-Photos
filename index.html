@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Ma Galerie de Photos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,18 +25,17 @@
        <h2>À propos de la Galerie</h2>
        <p>Cette Galerie a été créer pour illustrer des images</p>
     </section>
-
-    <div class="gallery">
-        <figure class="photo">
-            <img src="https://images.unsplash.com/photo-1533450718592-29d45635f0a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8anBnfHwwfHx8fDE2MjY3MDI1NjU&ixlib=rb-1.2.1&q=80&w=1080" alt="Description de l'image 1">
-            <figcaption>Tigre majestueux</figcaption>
-        </figure>
-        <figure class="photo">
-            <img src="https://th.bing.com/th/id/R.826ed30956d2352f671a4de5f095023c?rik=gQGT2PK24GCXVQ&riu=http%3a%2f%2fst.gde-fon.com%2fwallpapers_original%2f458876_abstrakciya_fon_oboi_shar_1920x1200_www.Gde-Fon.com.jpg&ehk=4t8pRs7vOqrznAUSWWGX0ZUirwDUefCrvKOiza%2f4JWs%3d&risl=&pid=ImgRaw&r=0" width="1090" height="650" alt="Description de l'image 2">
-            <figcaption>Boule rouge 3D</figcaption>
-        </figure>
-        <!-- Ajouter d'autres image ici -->
+    
+    <div id="galerie">
+        <div id="carrousel">
+            <img src=https://images.unsplash.com/photo-1533450718592-29d45635f0a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8anBnfHwwfHx8fDE2MjY3MDI1NjU&ixlib=rb-1.2.1&q=80&w=1080" alt="Description de l'image 1" class="active">
+            <img src="https://th.bing.com/th/id/R.826ed30956d2352f671a4de5f095023c?rik=gQGT2PK24GCXVQ&riu=http%3a%2f%2fst.gde-fon.com%2fwallpapers_original%2f458876_abstrakciya_fon_oboi_shar_1920x1200_www.Gde-Fon.com.jpg&ehk=4t8pRs7vOqrznAUSWWGX0ZUirwDUefCrvKOiza%2f4JWs%3d&risl=&pid=ImgRaw&r=0" alt="Description de l'image 2">
+            <!-- Plus d'images ici -->
+        </div>
+        <button id="prev">Précédent</button>
+        <button id="next">Suivant</button>
     </div>
+    
 
     <footer class="site-footer">
         <p> © 2024 Nap's Gallery </p>
@@ -44,5 +43,5 @@
     
     <script src="script.js"></script>
 
-</body>
-</html>
+    </body>
+    </html>

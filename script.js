@@ -1,6 +1,7 @@
 // Thème Clair & Thème Sombre JS
 document.getElementById('theme-switch').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+    var body = document.body;
+    body.classList.toggle('dark-theme');
 })
 
 // Afficher l'heure en temps réel
@@ -17,3 +18,20 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+// Defilement photo 
+document.getElementById('next').addEventListener('click', function() {
+    changeImage(1);
+});
+document.getElementById('prev').addEventListener('click', function() {
+    changeImage(-1);
+});
+
+function changeImage(direction) {
+    var images = document.querySelectorAll('#carrousel img');
+    var activeIndex = Array.from(images).findIndex(image => image.classList.contains('active'));
+
+    images[activeIndex].classList.remove('active');
+    var nextIndex = (activeIndex + direction + images.length) % images.length;
+    images[nextIndex].classList.add('active');
+}

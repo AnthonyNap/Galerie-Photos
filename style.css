@@ -1,158 +1,149 @@
-/* Importation des polices */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:weight@400;700&display=swap');
-
-/* Styles de base */
 body {
-    background-color: white;
-    color: var(--primary-color); 
-    font-family: 'Roboto', Arial, sans-serif; 
-    margin: 0;
-    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Thème Sombre */
-body.dark-mode {
+/* Thème sombre général */
+.dark-theme {
+    background-color: #262626; /* Fond plus sombre pour augmenter le contraste */
+    color: #f8f8f8; /* Texte plus clair pour augmenter le contraste */
+}
+
+/* Titre H1 spécifique au thème sombre */
+.dark-theme h1 {
+    color: #fff; /* Couleur de texte blanche pour assurer la visibilité */
+}
+
+/* Navigation spécifique au thème sombre */
+.dark-theme nav {
+    background-color: #333; /* Fond plus sombre pour la barre de navigation */
+    color: #fff; /* Texte blanc pour la barre de navigation */
+}
+
+.dark-theme nav a {
+    color: #fff; /* Assure que les liens sont aussi en blanc */
+}
+
+.dark-theme nav a:hover {
+    background-color: #505050; /* Couleur de fond au survol */
+}
+
+/* Body theme */
+body.dark-theme {
     background-color: #333;
     color:white;
 }
 
-/* Style pour les boutons et interactions */
-#theme-switch {
-    background-color: #f8f8f8;
-    border: 2px solid var(--secondary-color); 
-    color: var(--secondary-color);
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    outline: none;
+body.dark-theme nav {
+    background-color: #444;
 }
 
-#theme-switch:hover {
-    background-color: var(--secondary-color);
-    color: white;
+body.dark-theme #carrousel img {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* Style pour le thème sombre */
-body.dark-mode #theme-switch {
-    background-color: #555;
-    color: #ddd;
-    border-color: #ddd;
-}
-
-body.dark-mode #theme-switch:hover {
-    background-color: #555;
-    color: #555;
-}
-
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 20px;
+/* Gallerie */
+#galerie {
+    width: 80%;
+    margin: auto;
     overflow: hidden;
-    background-color: #333;
+}
+
+/* Carrousel */
+#carrousel {
+    margin-bottom: 30px; /* Espace en dessous du carrousel */
+}
+
+h1, h2 {
+    margin-top: 20px; /* Espace au-dessus des titres */
+    margin-bottom: 10px; /* Espace en dessous des titres */
+}
+
+p {
+    line-height: 1.6; /* Hauteur de ligne pour la lisibilité du texte */
+}
+
+
+#carrousel img {
+    width: 100%;
+    display: none;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    #carrousel img {
+        width: 100%;
+    }
+}
+
+.dark-theme #carrousel img {
+    border: 1px solid #444;
+}
+
+#carrousel img.active {
+    display: block;
+}
+
+/* Titre H1 H2 ... */
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: #666;
+}
+
+/* navigation */
+nav {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul li {
-    display: inline;
+nav.dark-theme {
+    background-color: #333;
+    color: #f8f8f8;
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+nav a {
     text-decoration: none;
+    color: inherit;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #111;
+nav a:hover {
+    background-color: #f4f4f4;
 }
 
-#clock {
-    font-style: italic;
-    color: rgb(126, 69, 168);
-    font-size: 1.5em;
-    margin-left: auto;
-    padding-right: 0;
+/* button */
+button {
+    background-color: #008CBA; /* Couleur de fond */
+    color: white; /* Couleur de texte */
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Header */
-.site-header {
-    background-color: #524f4f;
-    padding: 20px 0;
-    text-align: center;
+button:hover {
+    background-color: #005f73; /* Couleur de fond au survol */
 }
 
-.site-header h1 {
-    margin: 0;
+.dark-theme button {
+    background-color: #666; /* Couleur de fond en thème sombre */
+    color: #ddd; /* Couleur de texte en thème sombre */
 }
 
-/* Section About */
-#about {
-    padding: 20px;
-    background-color: #f2f2f2;
-    color: #333;
-
+.dark-theme button:hover {
+    background-color: #555; /* Couleur de fond au survol en thème sombre */
 }
 
-/* Galerie */
-.gallery {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-padding: 20px;
-}
-
-.photo {
-margin-bottom: 20px;
-}
-
-.photo img {
-max-width: 100%;
-height: auto;
-border: 3px solid #ddd;
-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.photo figcaption {
-text-align: center;
-margin-top: 5px;
-}
-
-/* Footer */
-.site-footer {
-background-color: #524f4f;
-text-align: center;
-padding: 10px 0;
-position: relative;
-bottom: 0;
-width: 100%;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-.gallery {
-flex-direction: column;
-}
-nav ul li {
-float: none;
-}
-}
-
-/* Animation */
-.photo img:hover {
-transform: scale(1.05);
-transition: transform 0.5s ease;
-}
-
-/* Thème sombre/clair */
-body.dark-mode {
-background-color: #333;
-color: white;
-}
