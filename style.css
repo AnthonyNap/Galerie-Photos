@@ -1,5 +1,5 @@
 body {
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 1s ease, color 1s ease;
 }
 
 /* Thème sombre général */
@@ -97,22 +97,18 @@ h2 {
     color: #666;
 }
 
-/* navigation */
+/* Navigation */
 nav {
     background-color: #f8f8f8;
     color: #333;
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    justify-content: space-between; /* Sépare les éléments entre deux extrémités */
+    gap: 20px; /* Espace entre les éléments */
     align-items: center;
 }
 
-nav.dark-theme {
-    background-color: #333;
-    color: #f8f8f8;
-}
-
-nav a {
+nav a, nav span {
     text-decoration: none;
     color: inherit;
     padding: 10px 15px;
@@ -120,8 +116,40 @@ nav a {
     font-weight: bold;
 }
 
+/* Stylisation de la barre de navigation */
+nav ul {
+    list-style-type: none; /* Enlève les puces de la liste */
+    margin: 0; /* Enlève la marge par défaut */
+    padding: 0; /* Enlève le padding par défaut */
+    display: flex; /* Affiche les éléments de la liste en ligne */
+    justify-content: space-between; /* Répartit l'espace uniformément entre les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+nav li {
+    margin: 0;
+}
+
+nav.dark-theme {
+    background-color: #333;
+    color: #f8f8f8;
+}
+
 nav a:hover {
     background-color: #f4f4f4;
+}
+
+/* Stylisation de l'heure */
+#clock {
+    font-family: 'Arial', sans-serif; /* Utilise la police de ton choix */
+    font-size: 1.2em; /* Ajuste la taille de la police */
+    color: #333; /* Couleur du texte pour le thème clair */
+    padding: 10px 15px; /* Ajuste le padding pour l'espacement */
+    text-align: right; /* Alignement du texte à droite */
+}
+
+.dark-theme #horloge {
+    color: #fff
 }
 
 /* button */
