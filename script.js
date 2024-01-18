@@ -1,4 +1,4 @@
-// Thème Clair & Thème Sombre JS
+// Thème Clair & Thème Sombre 
 document.getElementById('theme-switch').addEventListener('click', function() {
     var body = document.body;
     body.classList.toggle('dark-theme');

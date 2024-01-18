@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Nap's Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: red;
+            overflow: hidden; /* Empêche tout défilement */
+            display: flex;
+            align-items: center; /* Centrer le contenu verticalement */
+            justify-content: center; /* Centrer le contenu horizontalement */
+            height: 100vh; /* Pleine hauteur de la fenêtre */
+        }
+
+        .content {
+            text-align: center; /* Centre le texte horizontalement */
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative; /* Position relative pour le flux normal */
+            display: inline-block; /* Permettre l'animation de défilement */
+            font-size: 2em;
+            animation: marquee 20s linear infinite; /* Animation infinie */
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid indigo;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 20px auto; /* Ajoute un espace au-dessus et en dessous, tout en centrant */
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .back-button {
+            position: fixed; /* Position fixe sur la page */
+            bottom: 20px; /* Positionné en bas à 20px du bord */
+            left: 50%; /* Centré horizontalement */
+            transform: translateX(-50%); /* Astuce pour vraiment centrer le bouton */
+            padding: 10px 20px;
+            background: red; /* Couleur de fond */
+            color: white; /* Couleur de texte */
+            text-decoration: none; /* Pas de soulignement */
+            border: none; /* Pas de bordure */
+            cursor: pointer; /* Curseur pointeur */
+        }
+
+        .back-button:hover {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="marquee">
+            <p>Page en cours de construction...</p>
+        </div>
+        <div class="loader"></div>    
+    </div>
+
+    <!-- Bouton de retour à l'accueil -->
+    <a href="index.html" class="back-button">Retour à l'accueil</a>
+</body>
+</html>

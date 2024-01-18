@@ -11,11 +11,11 @@ Fonctionnalités
 
 Technologies Utilisées
 
-    HTML
-    CSS
+    HTML :
+    CSS  :
         Flexbox pour la mise en page.
         Média queries pour le design réactif.
-    JavaScript
+    JavaScript :
         Manipulation du DOM pour le thème dynamique et l'affichage de l'heure.
 
 Comment Utiliser

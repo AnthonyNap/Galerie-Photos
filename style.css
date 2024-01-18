@@ -14,7 +14,6 @@ body {
     z-index: 1; /* Assure-toi que l'image reste en arrière-plan */
 }
 
-/* Tu peux ajouter une marge en bas du conteneur du texte si tu veux pousser l'image vers le bas */
 .text-container {
     margin-bottom: 20px; /* Ajuste cette valeur selon l'espacement désiré entre le texte et l'image */
 }
@@ -78,7 +77,6 @@ h1, h2 {
 p {
     line-height: 1.6; /* Hauteur de ligne pour la lisibilité du texte */
 }
-
 
 #carrousel img {
     width: 100%;
