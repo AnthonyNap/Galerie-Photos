@@ -19,6 +19,23 @@
             height: 100vh; /* Pleine hauteur de la fenêtre */
         }
 
+        .gallery-button {
+            position: fixed; /* Position fixe sur la page */
+            top: 20px; /* Positionné en haut à 20px du bord */
+            left: 50%; /* Centré horizontalement */
+            transform: translateX(-50%); /* Astuce pour vraiment centrer le bouton */
+            padding: 10px 20px;
+            background: indigo; /* Couleur de fond */
+            color: white; /* Couleur de texte */
+            text-decoration: none; /* Pas de soulignement */
+            border: none; /* Pas de bordure */
+            cursor: pointer; /* Curseur pointeur */
+        }
+        
+        .gallery-button:hover {
+            background: lightblue; /* Changement de couleur au survol */
+        }
+
         .content {
             text-align: center; /* Centre le texte horizontalement */
         }
@@ -79,7 +96,7 @@
 <body>
 
  <!-- Bouton Galerie -->
- <a href="" class="gallery-button">Galerie</a>
+ <a href="/Faire_Defiler_Des_Images.html" class="gallery-button">Galerie</a>
 
     <audio controls autoplay loop>
         <source src="300_Soundtrack_The_Hot_Gates.mp3" type="audio/mpeg">
