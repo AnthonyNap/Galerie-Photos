@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.mySlides {
+    display: block;
+    margin: 10px auto;
+    border: 3px solid darkgoldenrod;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Conteneur pour les boutons */
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* Ceci va séparer les boutons */
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 1250px; /* Assurez-vous que cela correspond à la largeur de vos images */
+    margin: 20px auto; /* Centrer le conteneur et ajouter un peu d'espace au-dessus et en dessous */
+}
+
+button {
+    font-style: italic;
+    font-size: 20px;
+    background-color: black;
+    color: darkgoldenrod;
+    border: 1px solid blueviolet;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+
